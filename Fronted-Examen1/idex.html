@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Empleados</title>
+  <style>
+    body { font-family: Arial; margin: 40px; }
+    input { margin-bottom: 10px; }
+    table { border-collapse: collapse; margin-top: 20px; width: 100%; }
+    th, td { border: 1px solid #ccc; padding: 8px; }
+    th { background: #f2f2f2; }
+    button { cursor: pointer; }
+  </style>
+</head>
+
+<body>
+
+<h2>Registrar Empleado</h2>
+
+<form id="formEmpleado">
+
+<label>Nombre</label><br>
+<input type="text" id="nombre" required><br><br>
+
+<label>Puesto</label><br>
+<input type="text" id="puesto" required><br><br>
+
+<label>Salario</label><br>
+<input type="number" id="salario" required><br><br>
+
+<label>Fecha de Ingreso</label><br>
+<input type="date" id="fechaIngreso" required><br><br>
+
+<button type="submit">Guardar</button>
+
+</form>
+
+<h2>Lista de empleados</h2>
+
+<button onclick="obtenerEmpleados()">Actualizar lista</button>
+
+<table>
+<thead>
+<tr>
+<th>Nombre</th>
+<th>Puesto</th>
+<th>Salario</th>
+<th>Fecha</th>
+<th>Acción</th>
+</tr>
+</thead>
+
+<tbody id="tablaEmpleados"></tbody>
+
+</table>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
