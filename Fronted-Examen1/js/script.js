@@ -1,4 +1,4 @@
-const API_URL = "https://examen-01-obc.onrender.com";
+const API_URL = "https://examen-01-obc.onrender.com/empleados";
 
 const form = document.getElementById("formEmpleado");
 
